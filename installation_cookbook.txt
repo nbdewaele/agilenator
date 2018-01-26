@@ -1,0 +1,57 @@
+Download PHP on my system - Note version numbers
+(https://gist.github.com/shashankmehta/6ff13acd60f449eea6311cba4aae900a)
+Download MySQL
+(https://gist.github.com/nrollr/3f57fc15ded7dddddcc4e82fe137b58e)
+
+Tally cost of plugins so they know how much they will be paying monthly
+
+1.  Install wordpress on host's staging site
+	a. if staging not provided, go into cPanel public folder and create private folder for stagables.
+	b. back in cPanel, create subdomain called private.clientdomain.com for staging
+		1. Install wordpress there.
+	c. Going Live:
+	When your development site is complete, you will need to move it to the live environment (the place your client’s domain points to). If the host provides a staging site, they will also provide a process for doing this. If not, the easiest way to do this is by using a plugin. Duplicator is the most popular plugin for this.
+
+2.  Set the site title and tagline; Set the timezone (of your client).
+
+3.  Set custom path names Settings/Permalinks in url /%postname%/ for SEO opt
+
+4.  Know Posts/categories SEO optimimization
+
+5.  Add your theme of choice. Delete the default themes.
+	a.  Make a child theme. Set your child theme as the active theme.
+	b.  The easiest way to make a child theme is to use a plugin built for just that purpose (see the Plugins section below if you are unsure how to use Plugins). If you are using premium themes such as Genesis or Divi, you will find there are already many pre-built child themes available.
+
+6.  Check for mobile friendliness
+
+7.  THE HANDOFF - web security
+		If the install script created a user called “admin”, create a second account with admin privileges.  Give this account a name that isn’t obvious – so if you are designing for “Mary’s Cookery” then don’t have an account named “Mary”. Let’s make it a bit of a challenge for those nasty hacker bots!
+
+		Now logout of “admin” and log back in with the new account. Delete the “admin” account.
+
+		You should set up your client with editor privileges. Once the site is ready for final hand-off you may also add a second client account with Admin privileges, along with clear instructions on why this should not be the normal login account. (The safety-first approach –  always use programs with as little privilege as convenient so if the account is compromised, less damage is done.)
+
+		a.  Write a user manual for them so that they can get going easily and take care of itself.
+
+8.  Adding plugins - MUST HAVES
+		Chose from the featured plugins presented to you. You can see how many times these have been installed, people’s ratings and get more information if you need. Click “Install Now” to proceed. Besides Featured plugins, you can choose Popular and Recommended.
+		Use the search bar. This is very useful if you are looking for options in a specific field, such as social media.
+		Upload a plugin you have downloaded from elsewhere. Many companies make plugins available for download, usually as a .zip file. Download to your computer and use the Upload button to select that .zip file. WordPress will take care of the unpacking and installing.
+
+			a.  You want to reduce the chances of being hacked and of spam clogging up your client’s site. It’s also a great idea to offer a backup service.
+
+				1. Security
+				Akismet: Stops spam comments
+				WordFence: Provides protection against hackers
+				UpDraft Plus: Backup the site off-site (i.e. not the server the live site is on)
+
+				2. Performance
+				Jetpack: Over 30 modules. Only activate the ones you need.
+				Activate Photon: To load images faster
+				Smush: Reduces image sizes
+
+				3.  Email
+				Contact Form 7
+				Genesis Enews Extended: For Genesis users only, it’s a widget that ties the website into their email service provider
+
+9.  Adding pluggins - optional - don't add too many - only what you need - when there is a pain point
